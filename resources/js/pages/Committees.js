@@ -163,13 +163,12 @@ class Committees extends Component {
     }
     render() {
         const { rules } = this.state;
-        alert(this.state.committes);
-        alert(this.state.subdirector);
-        alert(this.state.coordinador);
-        alert(this.state.formation_center);
-        alert(this.state.place);
         if (!this.state.committes || !this.state.subdirector || !this.state.coordinador || !this.state.formation_center || !this.state.place) {
-            return <Loader />;
+            alert(this.state.committes);
+            alert(this.state.subdirector);
+            alert(this.state.coordinador);
+            alert(this.state.formation_center);
+            alert(this.state.place);
         }
         return (
             <div>
